@@ -9,7 +9,7 @@ APPLICATION = button
 RIOTBASE ?= $(CURDIR)/../../RIOT
 
 # Название платы, для которой происходит сборка проекта
-BOARD ?= stm32f4discovery
+BOARD ?= stm32f0discovery
 
 # Подключение модуля системного таймера
 USEMODULE += xtimer
