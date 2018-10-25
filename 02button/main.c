@@ -9,7 +9,7 @@ void btn_handler(void *arg)
   // Прием аргументов, передаваемых из главного потока.
   (void)arg;
   // Переключение состояния пина PC8
-  gpio_toggle(GPIO_PIN(PORT_С, 8));
+  gpio_toggle(GPIO_PIN(PORT_C, 8));
 }
 
 
