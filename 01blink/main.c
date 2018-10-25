@@ -17,7 +17,7 @@ int main(void)
       // Задача засыпает на период времени, равный значению макроса INTERVAL
       xtimer_periodic_wakeup(&last_wakeup, INTERVAL);
       // Пин PC8 переключает свое состояние на противоположное
-      gpio_toggle(GPIO_PIN(PORT_D, 13));
+      gpio_toggle(GPIO_PIN(PORT_C, 8));
     }
 
     return 0;
