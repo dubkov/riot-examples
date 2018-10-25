@@ -17,7 +17,7 @@ void *thread_one(void *arg)
     xtimer_ticks32_t last_wakeup_one = xtimer_now();
     while(1){
         // Переключение состояния пина PC8
-    	gpio_toggle(GPIO_PIN(PORT_С,8));
+    	gpio_toggle(GPIO_PIN(PORT_C,8));
         // Поток засыпает на 100000 микросекунд
     	xtimer_periodic_wakeup(&last_wakeup_one, 100000);
     }
@@ -28,7 +28,7 @@ void *thread_one(void *arg)
 int main(void)
 {
     // Инициализация пина PC8 на выход
-	gpio_init(GPIO_PIN(PORT_С,8), GPIO_OUT);
+	gpio_init(GPIO_PIN(PORT_C,8), GPIO_OUT);
 
     // Создание потока
     // stack_one - выделенная под стек память
